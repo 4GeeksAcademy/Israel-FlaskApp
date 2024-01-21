@@ -4,10 +4,10 @@ import os
 
 app = Flask(__name__)
 
-if os.path.isfile("/workspaces/Flaskandrender/src/decision_tree_classifier_default_4.sav"):
-    modelDir = "/workspaces/Flaskandrender/src/decision_tree_classifier_default_4.sav"
+if os.path.isfile("/workspaces/Flaskandrender/src/decision_tree_classifier_default_42.sav"):
+    modelDir = "/workspaces/Flaskandrender/src/decision_tree_classifier_default_42.sav"
 else:
-    modelDir = "./decision_tree_classifier_default_4.sav"
+    modelDir = "./decision_tree_classifier_default_42.sav"
 model = load(open(modelDir, "rb"))
 model = load(open("/workspaces/Israel-FlaskApp/Israel/decision_tree_classifier_default_42.sav", "rb"))
 
