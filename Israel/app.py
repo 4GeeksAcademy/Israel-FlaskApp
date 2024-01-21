@@ -10,7 +10,6 @@ else:
     modelDir = "./decision_tree_classifier_default_42.sav"
 
 model = load(open(modelDir, "rb"))
-model = load(open("/workspaces/Israel-FlaskApp/Israel/decision_tree_classifier_default_42.sav", "rb"))
 
 class_dict = {
     "0": "Iris setosa",
